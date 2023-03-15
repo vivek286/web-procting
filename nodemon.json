@@ -1,6 +1,0 @@
-{
-  "watch": ["index.ts", "server/**/*.ts", "shared/**/*.ts"],
-  "ignore": [".next"],
-  "ext": "ts",
-  "exec": "npm run clean && npm run build && node index.js"
-}

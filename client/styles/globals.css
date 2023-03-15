@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    font-family: 'Roboto', serif;
+  }
+} */
+
+@layer utilities {
+  @variants responsive {
+    .pi-h-860 {
+      height: 860px;
+    }
+    .pi-h-vhc {
+      height: calc(100vh - 175px);
+    }
+    .pi-h-550 {
+      height: 550px;
+    }
+    .pi-h-450 {
+      height: 450px;
+    }
+    .pi-h-387 {
+      height: 387px;
+    }
+    .pi-h-360 {
+      height: 360px;
+    }
+    .pi-h-320 {
+      height: 320px;
+    }
+    .pi-h-300 {
+      height: 300px;
+    }
+    .pi-top-27rem {
+      top: 27rem;
+    }
+    .pi-w-480 {
+      width: 480px;
+    }
+    .pi-ayps-heading {
+      font-style: normal;
+      width: 40%;
+    }
+    .pi-ayps-text {
+      width: 40%;
+      font-style: normal;
+      font-weight: normal;
+    }
+    .pi-ayps-e1 {
+      width: 10.48%;
+      height: 10.48%;
+    }
+    .pi-footer-bgc {
+      background-color: #f4f7fb;
+    }
+    .pi-faq-clr {
+      background-color: #F1F8E7;
+    }
+    .pi-ask-que-clr {
+      background-color: #F4F7FB;
+    }
+    .pi-ask-que-sub-clr {
+      background-color: #2564AF;
+    }
+  }
+}
+/* /test css/ */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  background-color: white;
+  font-family: "VT323", monospace;
+}
+
+.variant {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.correctAnswer {
+  color: #14a71c;
+  background: #8bd3dd;
+  padding: 1rem;
+}
+
+.correctAnswer:after {
+  background: #0aa116;
+  color: #001858;
+  visibility: visible;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* content: "correct!"; */
+}
+
+.incorrectAnswer {
+  background: #e94141;
+  color: #fef6e4;
+  padding: 1rem;
+}
+
+.incorrectAnswer:after {
+  background: #ec3333;
+  color: #001858;
+  visibility: visible;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* content: "incorrect!"; */
+}
+/* Scroll bar CSS */
+body::-webkit-scrollbar
+{
+	width: 12px;
+	/* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(63, 62, 62);
+}
